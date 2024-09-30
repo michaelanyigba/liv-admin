@@ -16,7 +16,7 @@ const useAddCounsellors = () => {
 
     setLoading(true);
     try {
-        const res = await fetch("/api/counsellors/add", {
+        const res = await fetch("https://liv-backend-2.onrender.com/api/counsellors/add", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({name, email, phone, bio, gender})

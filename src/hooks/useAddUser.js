@@ -15,7 +15,7 @@ const useAddUser = () => {
 
     setLoading(true);
     try {
-        const res = await fetch("/api/auth/signup", {
+        const res = await fetch("https://liv-backend-2.onrender.com/api/auth/signup", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({fullName, username, email, dob, bio, password, confirmPassword, gender})

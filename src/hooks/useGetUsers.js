@@ -7,7 +7,7 @@ const useGetUsers = () => {
         setLoading(true);
 
         try {
-            const res = await fetch("/api/users/all");
+            const res = await fetch("https://liv-backend-2.onrender.com/api/users/all");
             const data = await res.json();
             setUsers(data)
             if(data.error){

@@ -16,7 +16,7 @@ const useAddArticles = () => {
 
     setLoading(true);
     try {
-        const res = await fetch("/api/articles/add", {
+        const res = await fetch("https://liv-backend-2.onrender.com/api/articles/add", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({title, content})

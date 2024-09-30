@@ -9,7 +9,7 @@ const useEditArticle = ()=> {
     const editArticle = async( {title, content})=> {
         setLoading(true)
         try {
-            fetch(`api/articles/editArticles/${id}`, {
+            fetch(`https://liv-backend-2.onrender.com/api/articles/editArticles/${id}`, {
                 method: "PUT",
                 headers: {
                     'Content-Type': 'application/json'
